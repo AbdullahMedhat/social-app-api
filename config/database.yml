@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV['DATABASE_USER_NAME'] %>
+  password: <%= ENV['DATABASE_USER_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: social-app_development
+
+test:
+  <<: *default
+  database: social-app_test
+
+production:
+  <<: *default
+  database: simple-social-app_production
+  username: simple-social-app
+  password: <%= ENV['SIMPLE-SOCIAL-APP_DATABASE_PASSWORD'] %>

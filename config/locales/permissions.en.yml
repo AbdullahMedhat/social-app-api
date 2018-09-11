@@ -1,0 +1,4 @@
+en:
+  permissions:
+    access_denied: "You don't have the access to this action"
+    member_limition: 'Contact admin to visit this page'

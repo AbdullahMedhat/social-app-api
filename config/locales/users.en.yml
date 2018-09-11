@@ -1,0 +1,4 @@
+en:
+  users:
+    success_assing: 'User has beed assgined to the list'
+    exsist_assing: 'User Already assigned before!'
